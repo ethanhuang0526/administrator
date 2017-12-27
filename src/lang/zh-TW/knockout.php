@@ -12,14 +12,17 @@ return array(
     |
     */
 
-    'delete_active_item' => '你確定要刪除這個條目？這個操作無法逆轉。',
-    'saving'             => '保存中...',
-    'saved'              => '條目已經保存',
-    'deleting'           => '刪除中...',
-    'deleted'            => '條目已被刪除',
-    'character_left'     => ' 剩余字符',
-    'characters_left'    => ' 剩余字符串',
-    'no_results'         => '沒有結果匹配',
-    'select_options'     => '選擇一些選項',
-
+    'delete_active_item' => '你確定要刪除這個條目？這個操作無法逆轉。 ',
+    'delete_items' => '你確定要刪除這些條目？這個操作無法逆轉。 ',
+    'saving' => '保存中...',
+    'saved' => '條目已經保存',
+    'deleting' => '刪除中...',
+    'delete' => '刪除',
+    'cancel' => '取消',
+    'deleted' => '條目已被刪除',
+    'delete_failed' => '刪除條目失敗',
+    'character_left' => ' 剩餘字符',
+    'characters_left' => ' 剩餘字符串',
+    'no_results' => '沒有結果匹配',
+    'select_options' => '選擇一些選項',
 );
