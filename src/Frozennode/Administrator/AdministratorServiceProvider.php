@@ -39,7 +39,7 @@ class AdministratorServiceProvider extends ServiceProvider
         ]);
 
         $this->publishes([
-            __DIR__.'/../../../public' => public_path('packages/summerblue/administrator'),
+            __DIR__.'/../../../public' => public_path('vendor/packages/summerblue/administrator'),
         ], 'public');
 
         //set the locale
@@ -56,8 +56,8 @@ class AdministratorServiceProvider extends ServiceProvider
         //include our view composers, and routes to avoid issues with catch-all routes defined by users
         include __DIR__.'/../../viewComposers.php';
         include __DIR__.'/../../helpers.php';
-        
-        // Load route with web middleware 
+
+        // Load route with web middleware
         Route::group([
             'middleware' => 'web',
         ], function () {
