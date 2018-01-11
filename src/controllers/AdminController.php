@@ -398,6 +398,12 @@ class AdminController extends Controller
         $page        = $this->request->input('page', 1);
         $sortOptions = $this->request->input('sortOptions', array());
         $filters     = $this->request->input('filters', array());
+        // value is null unset filter
+        for ($i = count($filters)-1; $i >= 0; $i--) {
+            if (is_null($filters[$i]['value'])) {
+                unset($filters[$i]);
+            }
+        }
 
         //return the rows
         return response()->json($dataTable->getRows(app('db'), $filters, $page, $sortOptions));
